@@ -12,7 +12,7 @@
 
   <property>
     <name>fs.default.name</name>
-    <value>hdfs://{{active_master}}:9010</value>
+    <value>hdfs://{{active_master}}:9000</value>
   </property>
 
   <property>
@@ -43,6 +43,16 @@
   <property>
     <name>fs.tachyon.impl</name>
     <value>tachyon.hadoop.TFS</value>
+  </property>
+
+  <property>
+    <name>fs.s3n.awsAccessKeyId</name>
+    <value>{{aws_access_key_id}}</value>
+  </property>
+
+  <property>
+    <name>fs.s3n.awsSecretAccessKey</name>
+    <value>{{aws_secret_access_key}}</value>
   </property>
 
 </configuration>

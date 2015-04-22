@@ -8,11 +8,11 @@
 # The java implementation to use.  Required.
 export JAVA_HOME={{java_home}}
 
-export HADOOP_HOME="/root/persistent-hdfs"
-export HADOOP_MAPREDUCE_HOME="/root/mapreduce"
-
 # Extra Java CLASSPATH elements.  Optional.
 # export HADOOP_CLASSPATH=
+
+export HADOOP_HOME="/root/persistent-hdfs"
+export HADOOP_MAPREDUCE_HOME="/root/mapreduce"
 
 # The maximum amount of heap to use, in MB. Default is 1000.
 export HADOOP_HEAPSIZE=1000
@@ -37,7 +37,7 @@ export HADOOP_SSH_OPTS="-o StrictHostKeyChecking=no -o ConnectTimeout=5"
 
 # Where log files are stored.  $HADOOP_HOME/logs by default.
 # export HADOOP_LOG_DIR=${HADOOP_HOME}/logs
-export HADOOP_LOG_DIR=/mnt/persistent-hdfs/logs
+export HADOOP_LOG_DIR=/vol/persistent-hdfs/logs
 
 # File naming remote slave hosts.  $HADOOP_HOME/conf/slaves by default.
 # export HADOOP_SLAVES=${HADOOP_HOME}/conf/slaves
